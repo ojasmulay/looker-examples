@@ -4,8 +4,8 @@ view: product_facts {
               oi.order_item_product_id,
               sum(oi.order_item_subtotal) as revenue
           from
-              ecommerce_hive_db.order_items oi
-              inner join ecommerce_hive_db.orders o on oi.order_item_order_id = o.order_id
+              ecommerce_db.order_items oi
+              inner join ecommerce_db.orders o on oi.order_item_order_id = o.order_id
           where
               o.order_status <> 'CANCELED'
             and o.order_status <> 'SUSPECTED_FRAUD'
