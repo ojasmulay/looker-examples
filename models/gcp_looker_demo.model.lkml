@@ -33,3 +33,5 @@ explore: orders_temp {
 explore: products {}
 
 explore: salesperson {}
+
+explore: product_facts {}
