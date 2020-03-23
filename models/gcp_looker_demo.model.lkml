@@ -22,16 +22,6 @@ explore: order_items {}
 
 explore: orders {}
 
-explore: orders_temp {
-  join: salesperson {
-    type: left_outer
-    sql_on: ${orders_temp.salesperson_id} = ${salesperson.id} ;;
-    relationship: many_to_one
-  }
-}
-
 explore: products {}
-
-explore: salesperson {}
 
 explore: product_facts {}
