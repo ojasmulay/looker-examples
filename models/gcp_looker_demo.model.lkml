@@ -1,0 +1,35 @@
+connection: "qubole_presto_gcp_demo"
+
+# include all the views
+include: "/views/**/*.view"
+
+datagroup: gcp_looker_demo_default_datagroup {
+  # sql_trigger: SELECT MAX(id) FROM etl_log;;
+  max_cache_age: "1 hour"
+}
+
+persist_with: gcp_looker_demo_default_datagroup
+
+explore: access_logs {}
+
+explore: categories {}
+
+explore: customers {}
+
+explore: departments {}
+
+explore: order_items {}
+
+explore: orders {}
+
+explore: orders_temp {
+  join: salesperson {
+    type: left_outer
+    sql_on: ${orders_temp.salesperson_id} = ${salesperson.id} ;;
+    relationship: many_to_one
+  }
+}
+
+explore: products {}
+
+explore: salesperson {}
