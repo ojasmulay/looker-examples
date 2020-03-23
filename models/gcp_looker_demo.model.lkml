@@ -12,11 +12,11 @@ persist_with: gcp_looker_demo_default_datagroup
 
 explore: access_logs {}
 
-explore: categories {}
+explore:Top_10_by_revenue  {}
 
-explore: customers {}
+explore:  top_10_by_views  {}
 
-explore: departments {}
+explore: top_10_by_quantity  {}
 
 explore: order_items {}
 
