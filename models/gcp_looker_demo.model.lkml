@@ -25,3 +25,5 @@ explore: orders {}
 explore: products {}
 
 explore: product_facts {}
+
+explore: tpcds {}
