@@ -1,4 +1,4 @@
-connection: "qubole_presto_gcp_demo"
+connection: "ranga-looker-demo"
 
 # include all the views
 include: "/views/**/*.view"
