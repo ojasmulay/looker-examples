@@ -1,8 +1,6 @@
 view: tpcds {
-
   derived_table: {
     sql: use tpcds_orc_3000_presto_forcol;
-
 
             -- QID=TPC-DS_query57
 
